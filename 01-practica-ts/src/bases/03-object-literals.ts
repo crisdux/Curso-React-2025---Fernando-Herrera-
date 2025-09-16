@@ -48,6 +48,24 @@ otroAnimal.items.edad = 200; // solo cambiamos edad en el objeto anidado otroAni
 
 console.log({otroAnimal}, { animal}) // animal mantiene su edad original
 
+// las interfaces permiten escribir la estructura de un objeto en ts,
+// establece un contrato que el objeto literal debe cumplir si o si para mantener estructura
+// no implementa funcionalidades, solo establece estructura
+
+interface Person {
+    nombre: string;
+    apellido: string;
+    edad: number;
+}
+
+const cris: Person = {
+    nombre: "Cris",
+    apellido: "Villca",
+    edad: 25
+}
+
+console.log(cris);
+
 
 
 
