@@ -23,3 +23,8 @@ const getUser2 = ():User => (
 
 const user2 = getUser2()
 console.log(user2);
+
+
+const primos: number[] = [2,3,5,7,11]
+
+primos.forEach((v) => console.log(v))
