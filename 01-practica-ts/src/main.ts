@@ -1,5 +1,7 @@
 import './style.css'
 
+import { getHeroesByOwner } from './bases/08-modules'
+
 // import "./bases/01-const-let"
 // import "./bases/02-template-strings"
 // import  "./bases/03-object-literals"
@@ -8,7 +10,10 @@ import './style.css'
 // import "./bases/06-object-desestructuring"
 // import "./bases/07-array-desestructuring"
 import "./bases/08-modules"
+import { Owner } from './data/heroes.data'
 
+
+console.log(getHeroesByOwner(Owner.DC))
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
